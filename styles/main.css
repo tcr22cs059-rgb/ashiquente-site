@@ -1,0 +1,125 @@
+/* Base and layout */
+* { margin: 0; padding: 0; }
+html { background-color: #eef2f6; }
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1f2a37;
+  line-height: 1.6;
+  padding: 24px;
+}
+
+#container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #d9e1ea;
+  box-shadow: 0 6px 20px rgba(17, 24, 39, 0.06);
+  border-radius: 10px;
+  overflow: hidden; /* keeps rounded corners visible */
+}
+
+/* Header */
+#header {
+  padding: 24px 28px 14px 28px;
+  background: #0b3a6b; /* deep blue */
+  color: #ffffff;
+}
+
+#header h1 {
+  font-size: 28px;
+  letter-spacing: 0.3px;
+  margin-bottom: 14px;
+}
+
+/* Accent bar under header */
+.accent {
+  border-bottom: 4px solid #18a999; /* teal accent */
+}
+
+/* Nav - horizontal pill menu */
+#nav {
+  list-style: none;
+  display: block;
+}
+
+#nav li {
+  display: inline;
+  margin-right: 12px;
+}
+
+#nav a {
+  display: inline-block;
+  background-color: #0f4b89; /* slightly lighter blue */
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#nav a:hover,
+#nav a:focus {
+  background-color: #1867b3;
+  outline: none;
+}
+
+/* Content */
+#content {
+  padding: 26px 28px 30px 28px;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 18px 0 10px 0;
+  color: #0b3a6b;
+}
+
+p {
+  margin: 10px 0 14px 0;
+  max-width: 75ch;
+}
+
+/* Tag-style skill list */
+ul.tags {
+  list-style: none;
+  margin: 12px 0 6px 0;
+}
+
+ul.tags li {
+  display: inline;
+  background-color: #e8f5f3; /* pale teal */
+  color: #0f5a52;
+  border: 1px solid #cbe8e3;
+  padding: 6px 10px;
+  margin-right: 8px;
+  border-radius: 14px;
+}
+
+/* Footer */
+#footer {
+  padding: 14px 28px 18px 28px;
+  background-color: #f7fafc;
+  border-top: 1px solid #e2e8f0;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+/* Links in content */
+#content a {
+  color: #0b6e6b; /* teal link */
+  text-decoration: none;
+  border-bottom: 1px dotted #7bd3c8;
+}
+
+#content a:hover,
+#content a:focus {
+  color: #0a5c59;
+  border-bottom-color: #18a999;
+}
+
+/* Responsive tweak */
+@media screen and (max-width: 640px) {
+  body { padding: 14px; }
+  #header h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
+}
